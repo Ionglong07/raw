@@ -1,0 +1,4 @@
+findname: Windows.ApplicationModel.Store.dll
+   in: C:\Windows\System32
+and
+   in: C:\Windows\SysWOW64
