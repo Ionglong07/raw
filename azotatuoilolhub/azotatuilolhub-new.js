@@ -1,6 +1,6 @@
 // Script to manage event listeners (azota.vn)
 // Run in DevTools console
-
+function xoaEV() {
 const EVENT_TYPES = [
   'beforeunload', 'blur', 'click', 'DOMContentLoaded', 'hashchange',
   'keydown', 'load', 'locationchange', 'message', 'mousedown',
@@ -69,4 +69,6 @@ try {
   cleaner.execute();
 } catch (error) {
   console.error('Script initialization failed:', error);
+
+}
 }
