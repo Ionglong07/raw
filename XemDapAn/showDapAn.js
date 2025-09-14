@@ -51,5 +51,7 @@ setInterval(() =>{
                 const tong = diem1 + diem2 + diem3;
                 document.getElementById("tongDiem").innerHTML = `Ðiểm số: ${tong.toFixed(2)}`;
     },1000);
+    console.log('done');
 }
+
 
