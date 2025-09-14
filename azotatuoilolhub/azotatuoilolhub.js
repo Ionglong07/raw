@@ -1,5 +1,6 @@
 // type web: azota.vn/*
 // Run this script in console in dev tools
+function xoaEV() {
 function removeAllEventListeners(target, eventTypes) {
     try {
         eventTypes.forEach(eventType => {
@@ -47,4 +48,5 @@ try {
     });
 } catch (error) {
     console.warn("Có lỗi xảy ra hoặc getEventListeners không khả dụng:", error);
+}
 }
