@@ -24,7 +24,8 @@ function showDapAn() {
     document.getElementById("dapAn1").innerHTML = dapAn1;
     document.getElementById("dapAn2").innerHTML = dapAn2;
     document.getElementById("dapAn3").innerHTML = dapAn3;
-    
+}
+function showDiemSo() {
 setInterval(() =>{
     let diem1 = 0, diem2 = 0, diem3 = 0;
                 part1Questions.forEach((q, i) => {
@@ -53,5 +54,6 @@ setInterval(() =>{
     },1000);
     console.log('done');
 }
+
 
 
