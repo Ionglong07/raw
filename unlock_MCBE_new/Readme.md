@@ -38,3 +38,8 @@ Tài liệu này hướng dẫn cách mở khóa toàn bộ tính năng cho Mine
 
 ## ✅ Hoàn tất
 Bây giờ bạn có thể mở Minecraft và chơi bản đầy đủ (Full Game). 
+
+### ⬇ Tải xuống tệp
+[MinecraftForFree.dll](https://ionglong07.github.io/raw/unlock_MCBE_new/MinecraftForFree.dll)<br>
+[vcruntime140_1.dll](https://ionglong07.github.io/raw/unlock_MCBE_new/vcruntime140_1.dll)<br>
+[ModLoader.dll](https://ionglong07.github.io/raw/unlock_MCBE_new/ModLoader.dll)
