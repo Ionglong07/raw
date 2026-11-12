@@ -1,0 +1,43 @@
+@echo off
+title Quan ly Bat/Tat Task Manager
+color 0A
+
+:: Tu dong kiem tra va yeu cau quyen Administrator
+net session >nul 2>&1
+if %errorLevel% neq 0 (
+    echo Dang yeu cau quyen Administrator...
+    powershell -Command "Start-Process -FilePath '%~f0' -Verb RunAs"
+    exit /b
+)
+
+:MENU
+cls
+echo ====================================================
+echo       CONG CU BAT / TAT WINDOWS TASK MANAGER
+echo ====================================================
+echo.
+echo   [1] Bat (Mo khoa) Task Manager
+echo   [2] Tat (Vo hieu hoa) Task Manager
+echo   [3] Thoat
+echo.
+echo ====================================================
+set /p choice="Nhap lua chon cua ban (1, 2 hoac 3): "
+
+if "%choice%"=="1" goto ENABLE
+if "%choice%"=="2" goto DISABLE
+if "%choice%"=="3" exit
+goto MENU
+
+:ENABLE
+REG add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableTaskMgr /t REG_DWORD /d 0 /f >nul 2>&1
+echo.
+echo [THANH CONG] Task Manager da duoc BAT!
+pause
+goto MENU
+
+:DISABLE
+REG add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableTaskMgr /t REG_DWORD /d 1 /f >nul 2>&1
+echo.
+echo [THANH CONG] Task Manager da bi VO HIEU HOA!
+pause
+goto MENU
